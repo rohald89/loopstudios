@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+#hero {
+  background-image: url("assets/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 576px) {
+  #hero {
+    background-image: url("assets/desktop/image-hero.jpg");
+    background-position: center;
+  }
 }
